@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistemas Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Sistemas Web</h1>
+
+  <form id="WebForm">
+    <input type="text" id="web" placeholder="Pagina Web" required />
+    <input type="datetime-local" id="fechaHora" required>
+    <input type="text" id="Creador" placeholder="nombre_Creador" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="tel" id="telefono" placeholder="Teléfono" required>
+    <button type="submit">Guardar</button>
+  </form>
+
+  <input type="text" id="buscarInput" placeholder="Buscar por Nombre de la Web" />
+  <button onclick="BuscarWebs()">Buscar</button>
+
+  <div id="listaWebs"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
